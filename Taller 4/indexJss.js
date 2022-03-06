@@ -128,9 +128,11 @@ form.addEventListener("submit", e=>{
 
     }
 
-    if(password.value.length < 8){
+    // Contraseña
 
-        warnings += "La contraseña necesita mínimo 8 caracteres <br>"
+    if(password.value.length < 15 || password.value.length > 20 ){
+
+        warnings += "La contraseña necesita mínimo 15 caracteres y máximo 20.<br>"
         entrar = true
         console.log("Error en Password")
 
