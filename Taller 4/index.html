@@ -19,38 +19,38 @@
 
         <div class="main">
 
-            <form>
+            <form action="mailto:stevan1533@gmail.com" method="post" id="Form">
 
                 <div id="subtitle">
 
                     <h2 class="subtitle">Nombre:</h2>
-                    <input class="name" type="text" name="Name" maxlength="25"><br><br>
+                    <input class="name" id="Nombre" type="text" name="Name" maxlength="25"><br><br>
                     <label class="labelname">Nombre</label>
-                    <input class="lastname" type="text" name="lastname" maxlength="25">
+                    <input class="lastname" id="lastName" type="text" name="lastname" maxlength="25">
                     <label class="labellastname">Apellido</label>                    
                 </div>
 
                 <h2 class="subtitle">ID User:</h2>
-                <input class="IU" type="number" name="IDUser" min="0" max="99999999999">
-
-                <h2 class="subtitle">Cuenta:</h2>
-                <input class="account" type="text" name="Account" maxlength="20">
+                <input class="IU" type="text" name="IDUser" id="IU">
                     
                 <h2 class="subtitle">Contraseña:</h2>
-                <input class="password" type="password" name="Password">
+                <input class="password" type="password" name="Password" id="Password">
+
+                <h2 class="subtitle">Confirmar Contraseña:</h2>
+                <input class="Cpassword" type="password" name="CPassword" id="Cpassword">
                 
                 <h2 class="subtitle">Direccion:</h2>
-                <input class="direccion" type="text" name="direccion" maxlength="40">
+                <input class="direccion" type="text" name="direccion" id="Direccion">
 
                 <h2 class="subtitle">Email:</h2>
-                <input class="email" type="email" name="email" maxlength="120">
+                <input class="email" type="email" name="email" id="Email">
 
                 <h2 class="subtitle">Teléfono:</h2>
-                <input class="number" type="number" name="phone" min="0" max="99999999999999999999"> 
+                <input class="number" type="number" name="phone" id="Number"> 
                 <label class="labelnumber">Numero Telefónico</label>
 
                 <h2 class="subtitle"> Pais: </h2>
-                <select class="option" name="pais">
+                <select class="option" name="pais" id="Pais">
                     <option disabled="disabled" selected="selected">--Escoge tu país</option>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
@@ -287,12 +287,40 @@
                     <option value="ZM">Zambia</option>
                     <option value="ZW">Zimbabue</option>
                 </select>
+                <br><br>
+                <h2 class="GU">Gustos del Usuario:</h2><br><br>
+                <p class="fp">¿Desea ingresar sus gustos? 
+                    <input class="dig" id="dig" name="deseaIngresarGustos" type="checkbox" onchange="showContent()"></p><br><br>
+                <div class="GUDIV" id="GUDIV"> 
 
+                <p class="sp" id="color">Color Favorito:</p>
+                <input class="disenosp" id="colorFav" name="colorFav" type="text" ></p>
+
+                <p class="sp">Marca Carro Favorito:</p>
+                <input class="disenosp" id="marcaFav" name="colorFav" type="text" ></p>
+
+                <p class="sp">Estilo Carro Favorito:</p>
+                <input class="disenosp" id="estiloFav" name="colorFav" type="text" ></p>
+
+                <p class="sp">Modelo Carro Favorito:</p>
+                <input class="disenosp" id="modeloFav" name="colorFav" type="text" ></p>
+
+                <p class="tp">Seleccione la cantidad que está dispuesto a gastar:</p><br>
+                <p class="sp">$<output id="cantidadFav"></output>
+                    <input type="range" id="valor" class="valor" min="0" max="100000000" value="0" step="1000000"></p>
+
+                </div>
+                <p class="tp" id="Warnings"> </p>
                 <div id="boton">
                 <button type="submit">Registrar</button>
                 </div>
             </form>
         </div>
+
+        <!-- Scripts -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script src='indexJss.js'></script>
 
     </body>
 

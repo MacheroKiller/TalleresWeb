@@ -124,20 +124,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-.account{
-
-    position: relative;
-    left: 200px;
-    width: 470px;
-    top: -37px;
-    line-height: 40px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-
-}
-
-.password{
+.password, .Cpassword{
 
     position: relative;
     left: 200px;
@@ -256,3 +243,84 @@ button:hover{
 
 }
 
+/* ---- Añadiendo Gustos del Usuario ---- */
+
+.GUDIV{
+
+    padding: 0.5cm;
+    display: none;
+
+}
+
+.GU{
+
+
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.fp{
+
+    margin-left: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center
+
+}
+
+.dig{
+
+    margin-left: 20px;
+    width: 0.5cm;
+    height: 0.5cm;
+
+}
+
+.sp{
+
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.disenosp{
+
+    
+    position: relative;
+    left: 6.5cm;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.tp{
+
+    margin-left: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.valor{
+
+    position: relative;
+    left: 5cm;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 8cm;
+
+}
